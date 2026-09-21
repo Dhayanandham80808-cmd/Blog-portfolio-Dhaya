@@ -1,0 +1,26 @@
+{
+  "name": "premium-portfolio-backend",
+  "version": "1.0.0",
+  "description": "Robust REST API for Dhayanandham's Premium Portfolio & Tech Blog",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": [
+    "express",
+    "mongoose",
+    "blog",
+    "portfolio",
+    "api"
+  ],
+  "author": "Dhayanandham A",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^4.22.3",
+    "mongoose": "^8.24.4",
+    "nodemailer": "^7.0.13"
+  }
+}
