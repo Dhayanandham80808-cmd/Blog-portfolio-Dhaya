@@ -35,8 +35,8 @@ function Contact() {
     try {
       await sendContactMessage(formData);
       setStatus({
-        state: 'success','Thank you! Your message has been sent to Dhayanandham.'
-        message: 
+        state: 'success',
+        message: 'Thank you! Your message has been sent to Dhayanandham.'
       });
       setFormData({ name: '', email: '', subject: '', message: '' });
     } catch (err) {
