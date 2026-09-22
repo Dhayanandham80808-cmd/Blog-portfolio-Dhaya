@@ -35,14 +35,14 @@ function Contact() {
     try {
       await sendContactMessage(formData);
       setStatus({
-        state: 'success',
-        message: 'Unable to send your message. Please try again.'
+        state: 'success','Thank you! Your message has been sent to Dhayanandham.'
+        message: 
       });
       setFormData({ name: '', email: '', subject: '', message: '' });
     } catch (err) {
       setStatus({
         state: 'error',
-        message: err?.response?.data?.message ||  'Thank you! Your message has been sent to Dhayanandham.'
+        message: err?.response?.data?.message ||  'Unable to send your message. Please try again.'
       });
     }
   };
